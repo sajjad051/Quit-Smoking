@@ -12,7 +12,7 @@ class RegistrationService {
         'https://smoke.devdia.com/api/signup',
         body,
       );
-      print(response.statusCode);
+      //print(response.statusCode);
       if (response.statusCode == 201) {
         return response.statusCode;
        // print(jsonDataEncode);

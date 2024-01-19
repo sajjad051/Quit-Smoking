@@ -173,7 +173,7 @@ class PostProfilePage extends StatelessWidget {
                 ),
 
                 const Text(
-                  "Currency: \'USD\'",
+                  "Currency",
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 16,
@@ -192,10 +192,9 @@ class PostProfilePage extends StatelessWidget {
                     color: Colors.grey.shade200,
                   ),
                   child: TextField(
-                    keyboardType: TextInputType.number,
                      controller: controller.currency,
                     decoration: InputDecoration(
-                      hintText: "  Currency",
+                      hintText: "  BDT",
                       border: InputBorder.none,
                       //border:OutlineInputBorder(),
                       // border: BorderRadius.circular(),

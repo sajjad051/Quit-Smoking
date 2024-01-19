@@ -24,7 +24,7 @@ class RegistrationController extends GetxController {
       'password': password.text,
       'password_confirmation': confirmPassword.text,
     });
-    print(body.fields);
+   // print(body.fields);
 
     await RegistrationService().registration(body).then((value){
       if(value == 201) {

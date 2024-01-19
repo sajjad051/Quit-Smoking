@@ -255,6 +255,28 @@ class RegistrationPage1 extends StatelessWidget {
                       ),
                     ),
                   ),
+                ),
+                const SizedBox(
+                  height: 15,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text('Already have an account?'),
+                    const SizedBox(
+                      width: 3,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Get.toNamed(Routes.login);
+                      },
+                      child: const Text(
+                        'Sign In',
+                        style: TextStyle(
+                            color: Colors.green, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ],
                 )
               ],
             ),

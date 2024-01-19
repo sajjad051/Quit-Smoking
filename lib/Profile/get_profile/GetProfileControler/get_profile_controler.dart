@@ -15,8 +15,7 @@ class GetProfileController extends GetxController{
   }
 
   ShowProfile() async {
-
-  //Get.toNamed(Routes.home);
+    //Get.toNamed(Routes.home);
   await GetProfileService().getTokenData().then((value){
     if(value != null) {
       userGetProfileData.value = value;

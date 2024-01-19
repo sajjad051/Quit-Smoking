@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
+import '../../../Routes/Routes.dart';
 import '../../Controler/login_controler.dart';
 import '../../Controler/reg_controler.dart';
 
@@ -178,6 +179,29 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                   ),
+                ),
+
+                const SizedBox(
+                  height: 15,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text('don\'t have any account?'),
+                    const SizedBox(
+                      width: 3,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Get.toNamed(Routes.registration);
+                      },
+                      child: const Text(
+                        'Sign Up',
+                        style: TextStyle(
+                            color: Colors.green, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ],
                 )
 
               ],
