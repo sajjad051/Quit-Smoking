@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
 import '../../../Profile/get_profile/GetProfileControler/get_profile_controler.dart';
+import '../../../Routes/Routes.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
@@ -19,6 +20,8 @@ class HomePage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                ElevatedButton(onPressed: () {Get.toNamed(Routes.PostProfile);}, child: Text('Update Profile') ),
+                SizedBox(height: 15,),
                 Text("Id : ${controller.userGetProfileData().id.toString()}",style: TextStyle(color: Colors.green,fontSize: 25),),
                 SizedBox(height: 15,),
                 Text("Name : ${controller.userGetProfileData().name.toString()}",style: TextStyle(color: Colors.greenAccent,fontSize: 25),),
